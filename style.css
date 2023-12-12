@@ -272,7 +272,7 @@ body{
         padding-left: 25px;
         opacity: 1;
         transition: all .5s ease;
-        transform: translateX(-250px);
+        transform: translateX(-300px);
     }
     .nav-links-ul{
         display: flex;
@@ -300,7 +300,10 @@ body{
         opacity: 1;
         transform: translateX(0);
     }
-    
+    .fa-chevron-down{
+        font-size: 15px;
+        color: #1b1b1b;
+    }
         
     .dropdown-ul{
         position: relative;
@@ -310,24 +313,25 @@ body{
         background-color: transparent;
         margin: 0;
         gap: 10px;
-        padding: 0;
+        padding:  0;
         transition: all .2s;
         border-radius: 0;
-        padding-top: 5px;
+        padding-top: 0;
         top: 0;
         left: 0;
         opacity: 0;
         height: 0;
-        transform: translateY(-50px);
+        transform: scaleY(0);
     }
     .dropdown-ul li{
         padding: 0;
         transition: all 0.5s;
     }
     .add{
+        margin: 20px 0;
         opacity: 1;
         height: 100%;
-        transform: translateY(0);
+        transform: scaleY(1);
     }
     .dropdown-ul li a{
         font-size: 14px;
