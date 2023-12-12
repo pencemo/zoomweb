@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom</title>
+    <link rel="shortcut icon" type="image/png" href="">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    
+    <!-- https://swiperjs.com  slide animation cdn-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- https://github.com/michalsnik/aos  scroll animation cdn-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./style.css">
+        
+    <!-- demo fontawoisome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet"href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css" >
+    <!-- demo font -->
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="top-bar">
+        <div class="container">
+            <div class="raw top-bar-raw">
+                <div class="address-side">
+                    <i class="fa-solid fa-phone"><p>+971 4 575 4944</p></i>
+                    <i class="fa-solid fa-envelope"><p>zoomtech45@gmail.com</p></i>
+                </div>
+                <div class="icon-side">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="raw nav-container">
+                <div class="logo"><img src="./images/logo-2.png" alt=""></div>
+                <div class="nav-links">
+                    <ul class="nav-links-ul">
+                        <li class="main-li"><a href="">Home</a></li>
+                        <li class="main-li"><a href="">About Us</a></li>
+                        <li class="product-drop main-li" onclick="dropdown()">Products <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="dropdown-ul" >
+                                <li><a href="">Door & Windows</a></li>
+                                <li><a href="">Aluminium & Glazing</a></li>
+                                <li><a href="">INTERIOR SHADES</a></li>
+                                <li><a href="">Outdoor Shades</a></li>
+                                <li><a href="">Curtain Wall</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-li"><a href="">Project</a></li>
+                        <li class="main-li"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="toggle-btn" onclick="nav_toggle()"><i class="fa-sharp fa-regular fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="landing-bg">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-1">
+                <h1>Property Defines</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis temporibus atque assumenda voluptates inventore odio optio magnam ullam dolores.</p>
+                <div class="land-btn"><a href="">Get Start</a></div>
+              </div>
+              <div class="swiper-slide slide-2">
+                <h1>adipisicing elit</h1>
+                <p>temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. atque assumenda voluptates inventore odio optio magnam ullam dolores.</p>
+                <div class="land-btn"><a href="">Get Start</a></div>
+              </div>
+              <div class="swiper-slide slide-3">
+                <h1>amet consectetur</h1>
+                <p>Lorem temporibus ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis  atque assumenda voluptates inventore odio optio magnam ullam dolores.</p>
+                <div class="land-btn"><a href="">Get Start</a></div>
+              </div>
+              <div class="swiper-slide slide-4">
+                <h1>consectetur adipisicing</h1>
+                <p>Dignissimos Lorem ipsum dolor sit amet consectetur adipisicing elit. perspiciatis temporibus atque assumenda voluptates inventore odio optio magnam ullam dolores.</p>
+                <div class="land-btn"><a href="">Get Start</a></div>
+              </div>
+              <div class="swiper-slide slide-5">
+                <h1>dolor sit amet</h1>
+                <p> adipisicing elit. Dignissimos perspiciatis temporibus atque assumenda voluptates inventore odio optio magnam ullam dolores.</p>
+                <div class="land-btn"><a href="">Get Start</a></div>
+              </div>
+            </div>
+            <div class="swiper-pagination "></div>
+            <div class="swiper-button-next slid-btn"></div>
+            <div class="swiper-button-prev slid-btn"></div>
+          </div>
+
+    </section>
+
+
+
+
+
+    <!-- type animation cdn -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- slide animation cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!-- jquery.com -->
+
+    <!-- scroll animation cdn -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="./script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
