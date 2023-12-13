@@ -18,6 +18,7 @@ var swiper = new Swiper(".mySwiper", {
   
   });
 
+// navbar toggle 
 
   function dropdown(){
     document.querySelector('.dropdown-ul').classList.toggle("add")
@@ -33,28 +34,32 @@ var swiper = new Swiper(".mySwiper", {
     document.querySelector('.nav-links').classList.toggle("nav-links-toggle")
   }
 
+// *************************
 
   AOS.init({
     duration: 1000
   });
 
+
+
+
   // slide animation lading
-  let slides = document.querySelector(".landing-bg");
-  let index = 0;
-
-
-  function next(){
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-  };
-
-  function prev(){
-    slides[index].classList.remove('active');
-    index = (index - 1 + slides.length) % slides.length;
-    slides[index].classList.add('active');
-  };
-
-  // setInterval(next, 5000);
-
  
+
+  let slides = document.querySelectorAll(".slide-container");
+let index = 0;
+
+function next() {
+  slides[index].classList.remove('actv');
+  index = (index + 1) % slides.length;
+  slides[index].classList.add('actv');
+}
+
+function prev() {
+  slides[index].classList.remove('actv');
+  index = (index - 1 + slides.length) % slides.length;
+  slides[index].classList.add('actv');
+}
+setInterval(next, 6000);
+
+// ******************
