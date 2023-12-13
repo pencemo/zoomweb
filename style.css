@@ -6,7 +6,7 @@ a{
 }
 
 :root{
-    --prime-color: #ec1414;
+    --prime-color: #ffc527;
 }
 
 
@@ -53,10 +53,15 @@ body{
 }
 .icon-side{
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 .icon-side a{
+    font-size: 18px;
     color: rgb(59, 59, 59);
+    transition: all .3s;
+}
+.icon-side a:hover{
+    color: var(--prime-color);
 }
 
 /* ********************** */
@@ -104,17 +109,21 @@ body{
     cursor: pointer;
     font-weight: 300;
     padding: 10px 0;
-    transition: all 1s linear;
+    transition: all .3s linear;
+}
+.main-li a:hover,
+.main-li:hover{
+    color: var(--prime-color);
 }
 .main-li::before{
     content: "";
     width: 40px;
     height: 1px;
     position: absolute;
-    background-color: #d8d8d8;
+    background-color: var(--prime-color);
     bottom: 10px;
     transform: scaleX(0);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .main-li:hover::before{
     transform: scaleY(1);
@@ -127,6 +136,13 @@ body{
     color: #fff;
     font-size: 22px;
     display: none;
+    padding: 0 5px;
+    border-radius: 5px;
+    transition: all .2s;
+}
+.toggle-btn:hover{
+    background-color: #1b1b1b;
+    
 }
 
 .dropdown-ul{
@@ -227,13 +243,15 @@ body{
     background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.7),rgba(0,0,0,0.5)), url(./images/img-3.jpg);
 }
 
-
+.text-div{
+    margin-top: 150px;
+}
 .text-div h1{
-    color: #faea10;
+    color: var(--prime-color);
     font-weight: 600;
     font-size: 60px;
     line-height: 55px;
-    animation: slide-text .5s linear backwards;
+    animation: slide-head .5s linear backwards;
 }
 .text-div p{
     color: #fff;
@@ -241,19 +259,32 @@ body{
     font-weight: 300;
     line-height: 20px;
     max-width: 600px;
-    margin-bottom: 15px;
-    animation: slide-text .5s linear .2s backwards;
+    margin-bottom: 28px;
+    animation: slide-text .5s linear .3s backwards;
 }
 .get-btn{
     animation: slide-text .5s linear .3s backwards;
 }
 .get-btn a{
-    background-color: #faea10;
-    color: #1b1b1b;
-    padding: 10px 20px;
+    border: solid 2px var(--prime-color);
+    color: var(--prime-color);
+    padding: 10px 35px;
     animation: slide-text .5s linear .3s backwards;
+    transition: all .5s;
+}
+.get-btn a:hover{
+    color: #000000;
+    background-color: var(--prime-color);
+    padding: 10px 30px;
+    letter-spacing: 5px;
 }
 
+@keyframes slide-head{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+  }
 @keyframes slide-text{
     0%{
         opacity: 0;
@@ -283,11 +314,12 @@ body{
     height: 45px;
     place-content: center;
     border-radius: 50%;
-    opacity: .5;
+    opacity: .7;
     transition: all .5s;
 }
 .slide-btn:hover{
     opacity: 1;
+    color: var(--prime-color);
 }
 
 .slide-btn i{
