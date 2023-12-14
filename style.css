@@ -338,6 +338,33 @@ body{
 
 /* ******************** */
 
+.icon-section{
+    margin: 50PX;
+}
+.icon-raw{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.icon-set{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.icon-set i{
+    font-size: 35px;
+    border: solid 1px #1b1b1b;
+    width: 70px;
+    height: 70px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+
+
 /* section-2 */
 .section-2{
     width: 100%;
@@ -369,6 +396,8 @@ body{
     height: 100%;
     object-fit: cover;
 }
+
+
 .box{
     position: absolute;
     width: 150px;
@@ -467,6 +496,10 @@ body{
     background-color: var(--prime-color);
 }
 
+/* *********************** */
+
+
+
 
 /* footer */
 footer{
@@ -489,7 +522,7 @@ footer{
     font-size: 15px;
     line-height: 23px;
     font-weight: 300;
-    max-width: 300px;
+    max-width: 350px;
 }
 .footer-icon{
     display: flex;
