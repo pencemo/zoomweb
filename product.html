@@ -97,8 +97,9 @@
   position: relative;
   color: #fff;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
- 
-  .image-box{
+}
+
+.image-box{
     position: absolute;
     object-fit: cover;
     width: 100%;
@@ -117,77 +118,60 @@
     position: absolute;
     inset: auto auto 30px 30px;
     margin: 0;
-    transition: inset .3s .3s ease-out;
+    transition: inset .3s .3s ease;
     font-weight: normal;
     font-weight: 500;
     font-size: 25px;
     color: #fff;
   }
   
-  p, a {
+  .card-content p, .card-content a {
     position: absolute;
     opacity: 0;
     max-width: 80%;
     transition: opacity .3s ease-out;
   }
   
-  p {
+  .card-content p {
     inset: auto auto 80px 30px;
     font-size: 14px;
   }
   
-  a {
+  .card-content a {
     inset: auto auto 40px 30px;
     color: inherit;
     text-decoration: none;
   }
   
-  &:hover h2 {
+  .card:hover h2 {
     inset: auto auto 200px 30px;
     transition: inset .3s ease-out;
   }
   
-  &:hover p, &:hover a {
+  .card:hover p, .card:hover a {
     opacity: 1;
     transition: all .5s .1s ease-in;
   }
   
-  &:hover .image-box{
+  .card:hover .image-box{
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
-
-}
 
 .card-1{
     background-image: linear-gradient(45deg,rgba(0, 0, 0, .7),rgba(0,0,0,0.1)), url(./images/img-3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .card-2{
     background-image: linear-gradient(45deg,rgba(0, 0, 0, .7),rgba(0,0,0,0.1)), url(./images/img-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .card-3{
     background-image: linear-gradient(45deg,rgba(0, 0, 0, .7),rgba(0,0,0,0.1)), url(./images/img-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .card-4{
     background-image: linear-gradient(45deg,rgba(0, 0, 0, .7),rgba(0,0,0,0.1)), url(./images/img-3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .card-5{
     background-image: linear-gradient(45deg,rgba(0, 0, 0, .7),rgba(0,0,0,0.1)), url(./images/img-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .get-btn {
@@ -210,7 +194,8 @@
 /* ********************* */
 .head-back{
     width: 100%;
-    height: 300px;
+    width: auto;
+    aspect-ratio: 19 / 5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,6 +206,7 @@
     background-size: cover;
     text-align: center;
     padding: 0 20px;
+    margin-top: 20px;
 }
 .head-back h1{
     font-size: 50px;
@@ -247,6 +233,14 @@
     max-width: 700px;
     line-height: 30px;
 }
+@media (max-width: 768px){
+    .head-back{
+        aspect-ratio: 16 / 8;
+    }
+    .head-back h1{
+        font-size: 35px;
+    }
+}
 
 </style>
 
@@ -265,8 +259,8 @@
 <section class="section-2">
     <div class="container">
         <div class="raw card-raw">
-            <div class = "card card-1">
-                <div class="image-box"></div>
+            <div class = "card ">
+                <div class="image-box card-1"></div>
                 <div class="card-content">
                   <h2>Door & Windows</h2>
                   <p>Sliding Doors, Sliding-Folding Doors, Hinged Doors, French Doors</p>
@@ -274,8 +268,8 @@
                         <i class="fa-sharp fa-solid fa-arrow-right"></i> </span> </a>
                 </div>
             </div>
-            <div class = "card card-2">
-                <div class="image-box"></div>
+            <div class = "card ">
+                <div class="image-box card-2"></div>
                 <div class="card-content">
                   <h2>Aluminium & Glazing</h2>
                   <p>Hinged doors and windows, glass handrails, skylight, shover enclosures, exturuded louvers</p>
@@ -283,8 +277,8 @@
                         <i class="fa-sharp fa-solid fa-arrow-right"></i> </span> </a>
                 </div>
             </div>
-            <div class = "card card-3">
-                <div class="image-box"></div>
+            <div class = "card ">
+                <div class="image-box card-3"></div>
                 <div class="card-content">
                   <h2>Interior Shades</h2>
                   <p>Roller blinds , panel blinds, draperies and curtains, verticale blinds, healthcare curtains</p>
@@ -292,8 +286,8 @@
                         <i class="fa-sharp fa-solid fa-arrow-right"></i> </span> </a>
                 </div>
             </div>
-            <div class = "card card-4">
-                <div class="image-box"></div>
+            <div class = "card ">
+                <div class="image-box card-4"></div>
                 <div class="card-content">
                   <h2>Outdoor Shades</h2>
                   <p>Pergolas, awnings, sail shades, car park shades, sun sail, roller shutter</p>
@@ -301,8 +295,8 @@
                         <i class="fa-sharp fa-solid fa-arrow-right"></i> </span> </a>
                 </div>
             </div>
-            <div class = "card card-5">
-                <div class="image-box"></div>
+            <div class = "card ">
+                <div class="image-box card-5"></div>
                 <div class="card-content">
                   <h2>Curtain Wall</h2>
                   <p>Sliding Doors, Sliding-Folding Doors, Hinged Doors, French Doors</p>
