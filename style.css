@@ -471,9 +471,134 @@ body{
 /* footer */
 footer{
     width: 100%;
-    height: 300px;
+    padding: 50px 0;
     background-color: #1b1b1b;
 }
+.footer-set{
+    margin: 20px auto;
+}
+.footer-set-box{
+    margin-top: 30px;
+}
+.logo-footer{
+    width: 200px;
+}
+.logo-des{
+    color: #dbdbdb;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 300;
+    max-width: 300px;
+}
+.footer-icon{
+    display: flex;
+    gap: 10px;
+}
+.icon-round{
+    width: 35px;
+    height: 35px;
+    background-color: var(--prime-color);
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    transition: all .2s;
+}
+.icon-round:hover{
+    background-color: #ffedbb;
+}
+.icon-round i{
+    font-size: 18px;
+    color: #161616;
+}
+
+.footer-head{
+    font-size: 18px;
+    font-weight: 500;
+    color: #dbdbdb;
+    position: relative;
+    margin-bottom: 15px;
+}
+.footer-head::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: var(--prime-color);
+    bottom: 0;
+}
+.footer-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-contact-dts a,
+.footer-links a{
+    color: #dbdbdb;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all .3s ;
+}
+.footer-contact-dts a:hover,
+.footer-links a:hover{
+    color: var(--prime-color);
+}
+.footer-contact-dts i{
+    margin-right: 10px;
+}
+.footer-ads{
+    margin-bottom: 5px;
+}
+.footer-input{
+    margin-top: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.footer-input input{
+    background-color: #161616;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+.footer-input input:focus{
+    border: solid 1px var(--prime-color);
+}
+.footer-input input::placeholder{
+    color: #303030;
+}
+.footer-input i{
+    position: absolute;
+    left: 210px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .2s linear;
+}
+.footer-input i:hover{
+    color: var(--prime-color);
+}
+
+.bottom-line{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 100px;
+}
+.Copyright-raw{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.Copyright-raw p{
+    font-size: 15px;
+    color: #acacac;
+    font-weight: 300;
+}
+.Copyright-raw p a{
+    color: #fff;
+}
+
 
 
 @media (max-width: 768px){
@@ -585,6 +710,15 @@ footer{
         display: none;
     }
 
+
+
+    /* footer  */
+    .Copyright-raw{
+        display: block;
+    }
+    .Copyright-raw p{
+        margin: 0;
+    }
 }
 
 
