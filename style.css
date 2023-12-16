@@ -608,6 +608,7 @@ footer{
     border: none;
     padding: 8px 20px;
     border-radius: 5px;
+    border: solid 1px #161616;
 }
 .footer-input input:focus{
     border: solid 1px var(--prime-color);

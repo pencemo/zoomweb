@@ -56,7 +56,7 @@
                 <div class="nav-links">
                     <ul class="nav-links-ul">
                         <li class="main-li"><a href="./index.html">Home</a></li>
-                        <li class="main-li"><a href="#">About Us</a></li>
+                        <li class="main-li"><a href="./About.html">About Us</a></li>
                         <li class="product-drop main-li" onclick="dropdown()">Products <i class="fa-solid fa-chevron-down"></i>
                             <ul class="dropdown-ul" >
                                 <li><a href="./product.html">Door & Windows</a></li>
@@ -67,7 +67,7 @@
                             </ul>
                         </li>
                         <li class="main-li"><a href="">Project</a></li>
-                        <li class="main-li"><a href="./contact.html">Contact</a></li>
+                        <li class="main-li"><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="toggle-btn" onclick="nav_toggle()"><i class="fa-sharp fa-regular fa-bars"></i></div>
@@ -82,86 +82,218 @@
     --prime-color: #ffc527;
     }
 
-    .about-sect{
-        margin: 150px 0;
-    }
-    .about-raw{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-    .imgbox{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    .bgimgbox{
-        width: 90%;
-        max-width: 400px;
-    }
-    .bgimgbox img{
-        width: 100%;
-    }
-    .ab-set-2{
-        margin-top: 50px;
-    }
-    .ab-text-side h1{
-        font-size: 45px;
-        font-weight: 600;
-        margin: 0;
-    }
-    .ab-text-side h1 span{
-        color: var(--prime-color);
-    }
-    .ab-text-side h4{
-        font-size: 25px;
-        font-weight: 400;
-        margin-bottom: 20px;
-    }
-    .ab-text-side p{
-        font-size: 16px;
-        font-weight: 400;
-    }
-    .divdr{
-        width: 100%;
-        height: 1px;
-        background-color: var(--prime-color);
-    }
+    body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            color: #2e2e2e;
+            text-align: center;
+            padding: 1em 0;
+            font-weight: 700;
+        }
+        header h1{
+            font-weight: 700;
+        }
+
+        .container-1 {
+            padding: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding-left: auto;
+            margin-bottom: 50px;
+            gap: 50px;
+        }
+
+        .contact-info .dt-div{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .contact-info i {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: var(--prime-color);
+        }
+
+        .contact-info h2{
+            font-size: 18px;
+            color: #555;
+            margin: 0;
+        }
+        .contact-info p{
+            font-size: 15px;
+            color: #555;
+            margin: 0;
+            max-width: 350px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #5c5c5c;
+            padding: 0 5px;
+        }
+
+        input,
+        textarea {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border: none;
+        }
+
+        button {
+            background-color: var(--prime-color);
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #cf9e18;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .form-group label {
+            position: absolute;
+            left: 12px;
+            top: 12px;
+            font-size: 14px;
+            opacity: 1;
+            pointer-events: none;
+            transition: top 0.3s, font-size 0.3s;
+        }
+
+        .form-group input:focus ~ label,
+        .form-group textarea:focus ~ label,
+        .form-group input:valid ~ label,
+        .form-group textarea:valid ~ label {
+            top: -5px;
+            background-color: #ffffff;
+            font-size: 14px;
+        }
+
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .map {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 1;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            animation: fadeIn 0.6s ease-out;
+        }
+        .sect{
+            margin: 50px 0;
+        }
+    
 </style>
 
-<section class="about-sect">
-    <div class="container">
-        <div class="raw about-raw">
-            <div class="ab-set-1 col-lg-6">
-                <div class="imgbox">
-                    <div class="bgimgbox"><img src="./images/man---2.png" alt=""></div>
-                </div>
-            </div>
-            <div class="ab-set-2 col-lg-6">
-                <div class="ab-text-side">
-                    <h1>About <span>Us</span></h1>
-                    <h4>Zoom Aluminum<div class="divdr"></div></h4>
-                    
-                    <p>ZOOM Aluminum  is a rapidly expanding steel door manufacturer based in Dubai. We specialize in the design and manufacturing of doors for both residential homes and commercial spaces. From our inception, we have taken great pride in supporting the communities in which we live and work. <br><br>
 
-                    Uniquely, we refrain from comparing our products with other brands because we craft each door with an extra emphasis on quality, ensuring a safe and aesthetically pleasing complement to various architectural elements in your home. Our commitment to doing things right, even if it means doing them a little differently, sets us apart.<br><br>
-                    
-                    ZOOM Aluminum is dedicated to environmental responsibility, taking a comprehensive approach to protect trees and the environment. Despite our commitment to sustainability, we never compromise on materials, ensuring that our doors are built with robust and secure meterials<br><br>
-                    
-                    In Dubai, our doors undergo rigorous performance testing for excellent weather resistance, durability, and color retention. When you choose ZOOM Aluminum , you can trust that the same high-quality materials and manufacturing processes are consistently applied across our entire product line. Experience the strength, safety, and style that define ZOOM  doors.</p>
-                    <div class="get-btn more-btn"><a class="more-btn-a" href="">More About Us</a></div>
-
+<section class="sect">
+    
+<header>
+    <h1>Contact Us</h1>
+</header>
+<div class="container container-1 animated">
+    <div class="row  justify-content-center" >
+        <div class="col-sm-12 col-lg-6 " data-aos="fade-up">
+           <div class="contact-info">
+               <div class="dt-div">
+                <i class="fa-duotone fa-map-marker-alt"></i>
+                <div>
+                    <h2>Address</h2>
+                    <p>Shop No-3 - Naif St - opposite Khalid Mosque, Deira - Dubai - United Arab Emirates</p>
                 </div>
-            </div>
+               </div>
+                <div class="dt-div">
+                    <i class="fa-duotone fa-phone"></i>
+                <div>
+                    <h2>Phone</h2>
+                    <p>+971 4575 4944</p>
+                </div>
+                </div>
+                <div class="dt-div">
+                    <i class="fa-duotone fa-envelope"></i>
+                    <div>
+                        <h2>Email</h2>
+                        <p>zoomtech45@gmail.com</p>
+                    </div>
+                </div>
+            </div> 
         </div>
+        <div class="col-sm-12 col-lg-6 " data-aos="fade-up">
+            <form action="#" method="post">
+        <div class="form-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Name:</label>
+        </div>
+
+        <div class="form-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+        </div>
+
+        <div class="form-group">
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Message:</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+        </div>
+
+    
     </div>
+    
+
+
+    <div class="map-container">
+        <!-- You can embed your map here, e.g., using Google Maps or Mapbox -->
+        <!-- Replace the iframe source with your actual map embed code -->
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3085.900758369295!2d-74.0094494846749!3d40.70544468530517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e1746e13dd%3A0xd6a5d03b1879e5d5!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1632941514379!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
 </section>
-
-
 
 
 <!-- footr ***** -->
@@ -185,10 +317,10 @@
               <h3 class="footer-head">Quick Links</h3>
               <ul class="footer-links">
                 <li><a href="./index.html">Go to Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="./About.html">About Us</a></li>
                 <li><a href="./product.html">Our Products</a></li>
                 <li><a href="">Project</a></li>
-                <li><a href="./contact.html">Contact Info</a></li>
+                <li><a href="#">Contact Info</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-2 footer-set-box" >
@@ -224,7 +356,21 @@
 <!-- scrip links -->
 
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script>
+     const formInputs = document.querySelectorAll('input, textarea');
+
+formInputs.forEach(input => {
+    input.addEventListener('focus', () => {
+        input.parentElement.querySelector('label').classList.add('active');
+    });
+
+    input.addEventListener('blur', () => {
+        if (input.value === '') {
+            input.parentElement.querySelector('label').classList.remove('active');
+        }
+    });
+});
+</script>
 
     <!-- type animation cdn -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
