@@ -1,67 +1,59 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    effect: "fade",
-    autoplay:{
-      delay:4000,
-      disableOnInteraction: true,
-    },
-    
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  
-  });
+  slidesPerView: 1,
+  effect: "fade",
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: true,
+  },
 
-// navbar toggle 
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
-  function dropdown(){
-    document.querySelector('.dropdown-ul').classList.toggle("add")
-  }
+// navbar toggle
 
-  var droplinks=document.querySelector(".dropdown-ul li")
-  droplinks.addEventListener("click", function() {
-      dropdown.classList.remove("add")
-    });
+function dropdown() {
+  document.querySelector(".dropdown-ul").classList.toggle("add");
+}
 
+var droplinks = document.querySelector(".dropdown-ul li");
+droplinks.addEventListener("click", function () {
+  dropdown.classList.remove("add");
+});
 
-  function nav_toggle(){
-    document.querySelector('.nav-links').classList.toggle("nav-links-toggle")
-  }
+function nav_toggle() {
+  document.querySelector(".nav-links").classList.toggle("nav-links-toggle");
+}
 
 // *************************
 
-  AOS.init({
-    duration: 1000
-  });
+AOS.init({
+  duration: 1000,
+});
 
+// slide animation lading
 
-
-
-  // slide animation lading
- 
-
-  let slides = document.querySelectorAll(".slide-container");
+let slides = document.querySelectorAll(".slide-container");
 let index = 0;
 
 function next() {
-  slides[index].classList.remove('actv');
+  slides[index].classList.remove("actv");
   index = (index + 1) % slides.length;
-  slides[index].classList.add('actv');
+  slides[index].classList.add("actv");
 }
 
 function prev() {
-  slides[index].classList.remove('actv');
+  slides[index].classList.remove("actv");
   index = (index - 1 + slides.length) % slides.length;
-  slides[index].classList.add('actv');
+  slides[index].classList.add("actv");
 }
 setInterval(next, 6000);
 
 // ******************
-
-

@@ -55,8 +55,8 @@
                 <div class="logo"><img src="./images/logo-2.png" alt=""></div>
                 <div class="nav-links">
                     <ul class="nav-links-ul">
-                        <li class="main-li"><a href="#">Home</a></li>
-                        <li class="main-li"><a href="./About.html">About Us</a></li>
+                        <li class="main-li"><a href="./index.html">Home</a></li>
+                        <li class="main-li"><a href="#">About Us</a></li>
                         <li class="product-drop main-li" onclick="dropdown()">Products <i class="fa-solid fa-chevron-down"></i>
                             <ul class="dropdown-ul" >
                                 <li><a href="./product.html">Door & Windows</a></li>
@@ -77,132 +77,80 @@
 <!-- *************************** -->
 
 
-<!-- landing section  -->
+<style>
+    :root{
+    --prime-color: #ffc527;
+    }
 
-<section class="land-bg">
-    <div class="slide-container actv">
-        <div class="image-div img-1"></div>
-        <div class="slid">
-            <div class="text-div container">
-                <h1>1. Main Text First </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellendus, rerum at doloremque aperiam est quibusdam tempora iusto quis</p>
-                <div class="get-btn"><a href="">Get Start</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="slide-container ">
-        <div class="image-div img-2"></div>
-        <div class="slid">
-            <div class="text-div container">
-                <h1>2. Main Text First </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellendus, rerum at doloremque aperiam est quibusdam tempora iusto quis</p>
-                <div class="get-btn"><a href="">Get Start</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="slide-container ">
-        <div class="image-div img-3"></div>
-        <div class="slid">
-            <div class="text-div container">
-                <h1>3. Main Text First </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellendus, rerum at doloremque aperiam est quibusdam tempora iusto quis</p>
-                <div class="get-btn"><a href="">Get Start</a></div>
-            </div>
-        </div>
-    </div>
-    <button class="next slide-btn" onclick="next()"><i class="fa-light fa-angle-right"></i></button>
-    <button class="prev slide-btn" onclick="prev()"><i class="fa-light fa-angle-left"></i></button>
+    .about-sect{
+        margin: 150px 0;
+    }
+    .about-raw{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgbox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .bgimgbox{
+        width: 90%;
+        max-width: 400px;
+    }
+    .bgimgbox img{
+        width: 100%;
+    }
+    .ab-text-side h1{
+        font-size: 45px;
+        font-weight: 600;
+        margin: 0;
+    }
+    .ab-text-side h1 span{
+        color: var(--prime-color);
+    }
+    .ab-text-side h4{
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .ab-text-side p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+</style>
 
-</section>
-
-<!-- ******************************** -->
-
-
-<section class="icon-section">
-    <div class="container ">
-        <div class="raw icon-raw">
-            <div class="icon-set "><i id="arow" class=" fa-thin fa-down-left-and-up-right-to-center"></i> <p>Available In Different Sizes</p> </div>
-            <div class="icon-set"><i id="span" class="fa-thin fa-screwdriver-wrench"></i> <p>Easy To Install</p> </div>
-            <div class="icon-set"><i id="bug-1" class="fa-thin fa-bug"></i> <p>Termite Proof</p> </div>
-            <div class="icon-set"><i id="fire" class="fa-thin fa-fire-flame-curved"></i> <p>Fire Resistant</p> </div>
-            <div class="icon-set"><i id="clock" class="fa-thin fa-timer"></i> <p>Durability</p> </div>
-            <div class="icon-set"><i id="check" class="fa-thin fa-shield-check"></i> <p>Modern Design</p> </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- **************** -->
-<section class="section-2">
+<section class="about-sect">
     <div class="container">
-      <div class="row  justify-content-center" >
-          <div class="col-sm-12 col-md-6 " data-aos="fade-up">
-            <div class="about-text-side">
-              <h1>Open the door of <br>faith <span>and safety</span></h1>
-              <p>We are always striving to improve and ensure your satisfaction and safety with incredible innovations. ZOOM offers more styles and options than anyone else. Whether your home is traditional, contemporary, or historical, ZOOM provides a wide range of materials, colors, and options that surpass other brands. At ZOOM, we go beyond the surface to care about the little extras. We are consistently passionate about achieving customer satisfaction, always aiming to deliver the best and more for our customers.</p>
-              <div class="get-btn more-btn"><a class="more-btn-a" href="">More About Us</a></div>
+        <div class="raw about-raw">
+            <div class="ab-set-1 col-lg-6">
+                <div class="imgbox">
+                    <div class="bgimgbox"><img src="./images/man---2.png" alt=""></div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 " data-aos="fade-up">
-            <div class="image-box"> 
-                <img src="./images/img-2.jpg" alt="">
-                <div class="box"></div>
-            </div>
-          </div>
-  
-      </div>
-    </div>
-  </section>
+            <div class="ab-set-2 col-lg-6">
+                <div class="ab-text-side">
+                    <h1>About <span>Us</span></h1>
+                    <h4>zoom Aluminum</h4>
+                    <p>ZOOM Aluminum  is a rapidly expanding steel door manufacturer based in Dubai. We specialize in the design and manufacturing of doors for both residential homes and commercial spaces. From our inception, we have taken great pride in supporting the communities in which we live and work. <br><br>
 
-  
-<section class="section-3">
-    <div class="head-choose">
-        <h1>Why <span>Choose</span> Us</h1>
-        <div class="line-dvr"></div>
-    </div>
-    <div class="mani-container">
-        <div class="container ">
-            <div class="row  justify-content-center " >
-                <div class="col-sm-12 col-md-7 img-set" data-aos="fade-up">
-                    <div class="man-bg-cont">
-                        <div class="box-2"></div>
-                        <div class="man-img"><img src="./images/pngwing man.png" alt=""></div>
-                    </div>
+                    Uniquely, we refrain from comparing our products with other brands because we craft each door with an extra emphasis on quality, ensuring a safe and aesthetically pleasing complement to various architectural elements in your home. Our commitment to doing things right, even if it means doing them a little differently, sets us apart.<br><br>
+                    
+                    ZOOM Aluminum is dedicated to environmental responsibility, taking a comprehensive approach to protect trees and the environment. Despite our commitment to sustainability, we never compromise on materials, ensuring that our doors are built with robust and secure meterials<br><br>
+                    
+                    In Dubai, our doors undergo rigorous performance testing for excellent weather resistance, durability, and color retention. When you choose ZOOM Aluminum , you can trust that the same high-quality materials and manufacturing processes are consistently applied across our entire product line. Experience the strength, safety, and style that define ZOOM  doors.</p>
+                    <div class="get-btn more-btn"><a class="more-btn-a" href="">More About Us</a></div>
+
                 </div>
-                <div class="col-sm-12 col-md-5 Quality-sect" data-aos="fade-up">
-                    <div class="set-1">
-                        <div class="set-icon"><i class="fa-duotone fa-lightbulb"></i></div>
-                        <div class="set-text">
-                            <h3>Innovative Solutions</h3>
-                            <p>Zoom is at the forefront of innovation, consistently introducing cutting-edge products and solutions. From advanced glazing technologies to sleek aluminum designs, we redefine industry standards</p>
-                            <div class="line-dvr"></div>
-                        </div>
-                    </div>
-                    <div class="set-1">
-                        <div class="set-icon"><i class="fa-solid fa-gem"></i></div>
-                        <div class="set-text">
-                            <h3>Unparalleled Quality</h3>
-                            <p>Quality is the cornerstone of Zoom's identity. Our doors, windows, aluminum products, and glazing solutions undergo rigorous testing, ensuring durability, functionality, and a lasting aesthetic appeal</p>
-                            <div class="line-dvr"></div>
-                        </div>
-                    </div>
-                    <div class="set-1">
-                        <div class="set-icon"><i class="fa-duotone fa-gear"></i></div>
-                        <div class="set-text">
-                            <h3>Customization and Versatility</h3>
-                            <p>Zoom understands that every space is unique. Our products offer a high degree of customization, allowing you to tailor designs to your preferences. Versatility is key, ensuring our solutions complement any architectural style</p>
-                            <div class="line-dvr"></div>
-                        </div>
-                    </div>
-                </div>
-    
             </div>
         </div>
     </div>
 </section>
-
-<!-- ********************************* -->
 
 
 
@@ -227,8 +175,8 @@
             <div class="col-sm-6 col-md-3 col-lg-2 footer-set-box" >
               <h3 class="footer-head">Quick Links</h3>
               <ul class="footer-links">
-                <li><a href="#">Go to Home</a></li>
-                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./index.html">Go to Home</a></li>
+                <li><a href="#">About Us</a></li>
                 <li><a href="./product.html">Our Products</a></li>
                 <li><a href="">Project</a></li>
                 <li><a href="">Contact Info</a></li>
@@ -237,11 +185,11 @@
             <div class="col-sm-6 col-md-3 col-lg-2 footer-set-box" >
                 <h3 class="footer-head">Our Products</h3>
                 <ul class="footer-links">
-                    <li><a href="">Door & Windows</a></li>
-                    <li><a href="">Aluminium & Glazing</a></li>
-                    <li><a href="">Interior Shades</a></li>
-                    <li><a href="">Outdoor Shades</a></li>
-                    <li><a href="">Curtain Wall</a></li>
+                    <li><a href="./product.html">Door & Windows</a></li>
+                    <li><a href="./product.html">Aluminium & Glazing</a></li>
+                    <li><a href="./product.html">Interior Shades</a></li>
+                    <li><a href="./product.html">Outdoor Shades</a></li>
+                    <li><a href="./product.html">Curtain Wall</a></li>
                   </ul>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-4 footer-set-box">
@@ -267,6 +215,7 @@
 <!-- scrip links -->
 
 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
     <!-- type animation cdn -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
