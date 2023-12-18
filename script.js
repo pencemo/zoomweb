@@ -57,3 +57,14 @@ function prev() {
 setInterval(next, 6000);
 
 // ******************
+
+window.addEventListener("load", () => {
+  const loder = document.querySelector(".loader-div");
+
+  loder.classList.add("loder-hide");
+
+  loder.addEventListener("transitionend", () => {
+    document.body.removeChild(loader-div)
+  });
+});
+
