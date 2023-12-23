@@ -7,6 +7,7 @@ a{
 
 :root{
     --prime-color: #ffc527;
+    --balck-color: #1b1b1b;
 }
 
 
@@ -101,7 +102,7 @@ body{
 }
 .icon-side a{
     font-size: 18px;
-    color: rgb(59, 59, 59);
+    color: var(--balck-color);
     transition: all .3s;
 }
 .icon-side a:hover{
@@ -117,10 +118,11 @@ body{
 
 .nav-bar{
     width: 100%;
-    background-color: black;
+    background-color: #fff;
     position: sticky;
     top: 0;
     z-index: 2;
+    box-shadow: 0 0 5px  rgba(17, 17, 17, 0.3);
 }
 
 .nav-container{
@@ -155,7 +157,7 @@ body{
     margin: 0;
 }
 .main-li{
-    color: #fff;
+    color: var(--balck-color);
     cursor: pointer;
     font-weight: 300;
     padding: 10px 0;
@@ -179,11 +181,11 @@ body{
     transform: scaleY(1);
 }
 .nav-links a{
-    color: #fff;
+    color: var(--balck-color);
     font-weight: 300;
 }
 .toggle-btn{
-    color: #fff;
+    color: var(--balck-color);
     font-size: 22px;
     display: none;
     padding: 0 5px;
@@ -191,7 +193,7 @@ body{
     transition: all .2s;
 }
 .toggle-btn:hover{
-    background-color: #1b1b1b;
+    background-color: #c7c7c7;
     
 }
 
@@ -297,6 +299,9 @@ body{
 
 .text-div{
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .text-div h1{
     font-family: 'Space Grotesk', sans-serif;
@@ -605,7 +610,8 @@ body{
 footer{
     width: 100%;
     padding: 50px 0;
-    background-color: #1b1b1b;
+    background-color: #ffffff;
+    box-shadow: 5px 15px 30px var(--balck-color);
 }
 .footer-set{
     margin: 20px auto;
@@ -617,7 +623,7 @@ footer{
     width: 200px;
 }
 .logo-des{
-    color: #dbdbdb;
+    color: var(--balck-color);
     margin-top: 10px;
     font-size: 15px;
     line-height: 23px;
@@ -631,14 +637,14 @@ footer{
 .icon-round{
     width: 35px;
     height: 35px;
-    background-color: var(--prime-color);
+    background-color: #ececec;
     display: grid;
     place-content: center;
     border-radius: 50%;
     transition: all .2s;
 }
 .icon-round:hover{
-    background-color: #ffedbb;
+    background-color: #bebebe;
 }
 .icon-round i{
     font-size: 18px;
@@ -648,7 +654,7 @@ footer{
 .footer-head{
     font-size: 18px;
     font-weight: 500;
-    color: #dbdbdb;
+    color: var(--balck-color);
     position: relative;
     margin-bottom: 15px;
 }
@@ -667,7 +673,7 @@ footer{
 }
 .footer-contact-dts a,
 .footer-links a{
-    color: #dbdbdb;
+    color: var(--balck-color);
     font-size: 14px;
     font-weight: 400;
     transition: all .3s ;
@@ -689,18 +695,18 @@ footer{
     align-items: center;
 }
 .footer-input input{
-    background-color: #161616;
+    background-color: #ececec;
     outline: none;
     border: none;
     padding: 8px 20px;
     border-radius: 5px;
-    border: solid 1px #161616;
+    border: solid 1px #ececec;
 }
 .footer-input input:focus{
-    border: solid 1px var(--prime-color);
+    border: solid 1px #6b6b6b;
 }
 .footer-input input::placeholder{
-    color: #303030;
+    color: #c4c4c4;
 }
 .footer-input i{
     position: absolute;
@@ -716,7 +722,7 @@ footer{
 .bottom-line{
     width: 100%;
     height: 1px;
-    background-color: #fff;
+    background-color: var(--balck-color);
     margin-top: 100px;
 }
 .Copyright-raw{
@@ -726,11 +732,11 @@ footer{
 }
 .Copyright-raw p{
     font-size: 15px;
-    color: #acacac;
+    color: var(--balck-color);
     font-weight: 300;
 }
 .Copyright-raw p a{
-    color: #fff;
+    color: var(--balck-color);
 }
 
 
