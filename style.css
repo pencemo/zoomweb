@@ -6,7 +6,7 @@ a{
 }
 
 :root{
-    --prime-color: #ffc527;
+    --prime-color: #f33434;
     --balck-color: #1b1b1b;
 }
 
@@ -289,7 +289,7 @@ body{
     }
   }
 
-.img-1{
+/* .img-1{
     background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url(./images/img-4.jpg);
 }
 .img-2{
@@ -297,6 +297,15 @@ body{
 }
 .img-3{
     background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url(./images/img-3.jpg);
+} */
+.img-1{
+    background-image: url(./images/img-4.jpg);
+}
+.img-2{
+    background-image: url(./images/img-2.jpg);
+}
+.img-3{
+    background-image: url(./images/img-3.jpg);
 }
 
 .text-div{
@@ -307,7 +316,7 @@ body{
 }
 .text-div h1{
     font-family: 'Space Grotesk', sans-serif;
-    color: var(--prime-color);
+    color: #d32525;
     font-weight: 600;
     font-size: 60px;
     line-height: 55px;
@@ -333,7 +342,7 @@ body{
     transition: all .5s;
 }
 .get-btn a:hover{
-    color: #000000;
+    color: #ffffff;
     background-color: var(--prime-color);
     padding: 10px 30px;
     letter-spacing: 5px;
@@ -495,6 +504,7 @@ body{
 }
 .head-choose h1 span{
     background-color: var(--prime-color);
+    color: #fff;
     padding: 0 5px;
     font-weight: 500;
 }
