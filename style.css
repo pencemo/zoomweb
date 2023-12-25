@@ -170,12 +170,13 @@ body{
 .main-li::before{
     content: "";
     width: 40px;
-    height: 1px;
+    height: 2px;
     position: absolute;
     background-color: var(--prime-color);
     bottom: 10px;
     transform: scaleX(0);
-    transition: all 0.3s;
+    transition: all 0.5s;
+    transform-origin: left;
 }
 .main-li:hover::before{
     transform: scaleY(1);
