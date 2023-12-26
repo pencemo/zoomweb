@@ -900,13 +900,22 @@ footer{
     color: #fff;
     padding: 10px 15px;
     border-radius: 0;
-    width: 150px;
+    /* width: 150px; */
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s;
 }
+
 
 .skiptranslate select option{
     background-color: #ffffff;
     color: #000000;
-    margin: 20px;
+    border: none;
+}
+.skiptranslate select:hover{
+    background-color: #dbdbdb;
+    color: #000000;
 }
 
 .VIpgJd-ZVi9od-ORHb-OEVmcd{
@@ -929,3 +938,9 @@ footer{
     }
 
 }
+
+
+select::-ms-expand {
+    display: none;
+}
+
