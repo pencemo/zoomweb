@@ -783,6 +783,7 @@ footer{
         transition: all .5s ease;
         transform: translateX(-300px);
     }
+    
     .nav-links-ul{
         display: flex;
         flex-direction: column;
@@ -891,10 +892,40 @@ footer{
     display: none !important;
 }
 
+.skiptranslate select{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    border: none;
+    background-color: #161616;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0;
+    width: 150px;
+}
 
-
-
+.skiptranslate select option{
+    background-color: #ffffff;
+    color: #000000;
+    margin: 20px;
+}
 
 .VIpgJd-ZVi9od-ORHb-OEVmcd{
     display: none;
+}
+
+
+
+.skiptranslate span{
+    display: none;
+}
+.skiptranslate {
+    color: #fff !important;
+}
+
+@media (max-width: 768px){
+    
+    .skiptranslate {
+        color: #ebebeb !important;
+    }
+
 }

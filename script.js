@@ -68,3 +68,16 @@ window.addEventListener("load", () => {
   });
 });
 
+
+
+
+// google translat
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: false,
+    includedLanguages: 'en,fr,ar,ur'
+  }, 'google_translate_element');
+}
+
